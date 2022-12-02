@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminHome">
+
+    <Button
+        android:id="@+id/profWindow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="271dp"
+        android:layout_marginEnd="161dp"
+        android:layout_marginBottom="63dp"
+        android:backgroundTint="#00897B"
+        android:onClick="viewHistorial"
+        android:text="Profesores"
+        app:layout_constraintBottom_toTopOf="@+id/EstWindow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.675"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/EstWindow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="164dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="153dp"
+        android:layout_marginBottom="304dp"
+        android:backgroundTint="#00897B"
+        android:onClick="viewHistorial"
+        android:text="Estudiantes"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profWindow" />
+</androidx.constraintlayout.widget.ConstraintLayout>
